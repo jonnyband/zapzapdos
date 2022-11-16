@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput, Button, FlatList, Image } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Button, FlatList, Image, TouchableOpacity } from 'react-native';
 import { Header } from 'react-native/Libraries/NewAppScreen';
 import {styles} from '../../styles/conversaStyles';
 import { TabView, SceneMap, TabBar } from 'react-native-tab-view';
@@ -29,23 +29,9 @@ export function Conversa() {
 
     const Conversas = () => (
         <View style={{ flex: 1, backgroundColor: 'white' }} >
-{/* <FlatList  
-                    data={[  
-                        {key: 'Android'},{key: 'iOS'}, {key: 'Java'},{key: 'Swift'},  
-                        {key: 'Php'},{key: 'Hadoop'},{key: 'Sap'},  
-                        {key: 'Python'},{key: 'Ajax'}, {key: 'C++'},  
-                        {key: 'Ruby'},{key: 'Rails'},{key: '.Net'},  
-                        {key: 'Perl'},{key: 'Sap'},{key: 'Python'},  
-                        {key: 'Ajax'}, {key: 'C++'},{key: 'Ruby'},  
-                        {key: 'Rails'},{key: '.Net'},{key: 'Perl'}  
-                    ]}  
-                    renderItem={({item}) =>  
-                        <Text style={styles.item}  
-                              onPress={this.getListViewItem.bind(this, item)}>{item.key}</Text>}  
-                    ItemSeparatorComponent={this.renderSeparator}  
-                />   */}
 
-                <View style={styles.chatCard}>
+
+                <TouchableOpacity style={styles.chatCard}>
                 <View style={styles.row2}>
                 <Image source={Zapzapdos} style={styles.img}></Image>
                 <View style={styles.col}>
@@ -57,7 +43,7 @@ export function Conversa() {
                     </View>
                     <Text style={{color:'gray', marginLeft:160, fontSize:10}}>11:52</Text>
                 </View>
-                </View>
+                </TouchableOpacity>
                 
 
         </View>
@@ -65,23 +51,9 @@ export function Conversa() {
       
       const Status = () => (
          <View style={{ flex: 1, backgroundColor: 'white' }} >
-{/* <FlatList  
-                    data={[  
-                        {key: 'Android'},{key: 'iOS'}, {key: 'Java'},{key: 'Swift'},  
-                        {key: 'Php'},{key: 'Hadoop'},{key: 'Sap'},  
-                        {key: 'Python'},{key: 'Ajax'}, {key: 'C++'},  
-                        {key: 'Ruby'},{key: 'Rails'},{key: '.Net'},  
-                        {key: 'Perl'},{key: 'Sap'},{key: 'Python'},  
-                        {key: 'Ajax'}, {key: 'C++'},{key: 'Ruby'},  
-                        {key: 'Rails'},{key: '.Net'},{key: 'Perl'}  
-                    ]}  
-                    renderItem={({item}) =>  
-                        <Text style={styles.item}  
-                              onPress={this.getListViewItem.bind(this, item)}>{item.key}</Text>}  
-                    ItemSeparatorComponent={this.renderSeparator}  
-                />   */}
 
-                <View style={styles.chatCard}>
+
+                <TouchableOpacity style={styles.chatCard}>
                 <View style={styles.row2}>
                 <Image source={Gzapzapdos} style={styles.img}></Image>
                 <View style={styles.col}>
@@ -92,7 +64,7 @@ export function Conversa() {
                     </View>
                     <Text style={{color:'gray', marginLeft:160, fontSize:10}}>11:52</Text>
                 </View>
-                </View>
+                </TouchableOpacity>
                 <Text style={{color:'gray', fontWeight:'bold', margin:20}}>Atualizações recentes</Text>
                 
 
@@ -101,23 +73,9 @@ export function Conversa() {
 
       const Chamadas = () => (
          <View style={{ flex: 1, backgroundColor: 'white' }} >
-{/* <FlatList  
-                    data={[  
-                        {key: 'Android'},{key: 'iOS'}, {key: 'Java'},{key: 'Swift'},  
-                        {key: 'Php'},{key: 'Hadoop'},{key: 'Sap'},  
-                        {key: 'Python'},{key: 'Ajax'}, {key: 'C++'},  
-                        {key: 'Ruby'},{key: 'Rails'},{key: '.Net'},  
-                        {key: 'Perl'},{key: 'Sap'},{key: 'Python'},  
-                        {key: 'Ajax'}, {key: 'C++'},{key: 'Ruby'},  
-                        {key: 'Rails'},{key: '.Net'},{key: 'Perl'}  
-                    ]}  
-                    renderItem={({item}) =>  
-                        <Text style={styles.item}  
-                              onPress={this.getListViewItem.bind(this, item)}>{item.key}</Text>}  
-                    ItemSeparatorComponent={this.renderSeparator}  
-                />   */}
 
-                <View style={styles.chatCard}>
+
+                <TouchableOpacity style={styles.chatCard}>
                 <View style={styles.row2}>
                 <Image source={Zapzapdos} style={styles.img}></Image>
                 <View style={styles.col}>
@@ -129,7 +87,7 @@ export function Conversa() {
                     </View>
                     <Foundation style={{marginLeft:130, marginTop:10}} name="telephone" size={24} color="#25D366" />
                 </View>
-                </View>
+                </TouchableOpacity>
                 
 
         </View>

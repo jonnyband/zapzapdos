@@ -67,8 +67,6 @@ export const styles = StyleSheet.create({
 
   img:{
     borderRadius:50,
-    borderColor:'black',
-    borderWidth:1,
     height:50,
     width:50
   },
