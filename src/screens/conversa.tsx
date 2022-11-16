@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, Button, FlatList, Image } from 'react-native';
 import { Header } from 'react-native/Libraries/NewAppScreen';
-import {styles} from './styles/conversaStyles';
+import {styles} from '../../styles/conversaStyles';
 import { TabView, SceneMap, TabBar } from 'react-native-tab-view';
 import { MaterialIcons } from '@expo/vector-icons'; 
 import { Entypo } from '@expo/vector-icons'; 
@@ -11,8 +11,8 @@ import { FontAwesome } from '@expo/vector-icons';
 
 
 
-import Zapzapdos from './assets/zapzapdos.png';
-import Gzapzapdos from './assets/galarianzapzapdos.png';
+import Zapzapdos from '../../assets/zapzapdos.png';
+import Gzapzapdos from '../../assets/galarianzapzapdos.png';
 
 
 

@@ -1,18 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 import { Header } from 'react-native/Libraries/NewAppScreen';
-import {styles} from './styles/loginStyles';
+import {NavigationContainer} from '@react-navigation/native';
+import {styles} from '../../styles/loginStyles';
+import { Conversa } from './conversa';
 
-export function Login() {
-
-
-
-
-
-
-
-
-
+export const Login = props => {
 
   
     return (
@@ -23,7 +16,7 @@ export function Login() {
         <View style={styles.row} ><Text style={styles.grayText}>+     </Text><TextInput style={styles.textInput2}></TextInput><TextInput style={styles.textInput}></TextInput></View>
         <Text style={styles.grayText}>Sujeita a cobranças de tarifas de SMS de sua operadora</Text>
         <View style={styles.button}>
-        <Button  color='#25D366' title='Avançar'></Button>
+        <Button  color='#25D366' title='Avançar' onPress={()=>props.navigation.navigate('Conversa')}></Button>
         </View>
          </View>
        
