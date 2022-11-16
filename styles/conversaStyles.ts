@@ -57,8 +57,6 @@ export const styles = StyleSheet.create({
   chatCard:{
     height:windowHeight/10,
     width:windowWidth,
-    borderColor:'black',
-    borderWidth: 1,
     display:'flex',
     flexDirection:'row',
     justifyContent:'space-between',

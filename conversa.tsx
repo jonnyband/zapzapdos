@@ -6,9 +6,13 @@ import { TabView, SceneMap, TabBar } from 'react-native-tab-view';
 import { MaterialIcons } from '@expo/vector-icons'; 
 import { Entypo } from '@expo/vector-icons'; 
 import { Feather } from '@expo/vector-icons'; 
+import { Foundation } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons';
+
 
 
 import Zapzapdos from './assets/zapzapdos.png';
+import Gzapzapdos from './assets/galarianzapzapdos.png';
 
 
 
@@ -79,17 +83,17 @@ export function Conversa() {
 
                 <View style={styles.chatCard}>
                 <View style={styles.row2}>
-                <Image source={Zapzapdos} style={styles.img}></Image>
+                <Image source={Gzapzapdos} style={styles.img}></Image>
                 <View style={styles.col}>
-                    <Text style={{fontWeight:'bold', fontSize:16 }}>Zapzapdos</Text>
+                    <Text style={{fontWeight:'bold', fontSize:16 }}>Meu status</Text>
                     <View style={{display:'flex',flexDirection:'row'}}>
-                    <Feather  name="check" size={20} color="grey" />
-                    <Text style={{color:'gray'}}>Zaaap!Zaaaap!</Text>
+                    <Text style={{color:'gray'}}>Toque para atualizar seu status</Text>
                     </View>
                     </View>
                     <Text style={{color:'gray', marginLeft:160, fontSize:10}}>11:52</Text>
                 </View>
                 </View>
+                <Text style={{color:'gray', fontWeight:'bold', margin:20}}>Atualizações recentes</Text>
                 
 
         </View>
@@ -119,11 +123,11 @@ export function Conversa() {
                 <View style={styles.col}>
                     <Text style={{fontWeight:'bold', fontSize:16 }}>Zapzapdos</Text>
                     <View style={{display:'flex',flexDirection:'row'}}>
-                    <Feather  name="check" size={20} color="grey" />
-                    <Text style={{color:'gray'}}>Zaaap!Zaaaap!</Text>
+                    <Feather name="arrow-down-left" size={20} color="#25D366"/>
+                    <Text style={{color:'gray'}}>Há 20 minutos atrás</Text>
                     </View>
                     </View>
-                    <Text style={{color:'gray', marginLeft:160, fontSize:10}}>11:52</Text>
+                    <Foundation style={{marginLeft:130, marginTop:10}} name="telephone" size={24} color="#25D366" />
                 </View>
                 </View>
                 
@@ -140,7 +144,7 @@ export function Conversa() {
     const [index, setIndex] = React.useState(0);
     const [routes] = React.useState([
       { key: 'conversas', title: 'conversas' },
-      { key: 'status', title: 'Status' },
+      { key: 'status', title: 'Status ⬤' },
       { key: 'chamadas', title: 'Chamadas'}
     ]);
 
